@@ -23,6 +23,11 @@ jobs:
       - name: Install Vercel CLI
         run: npm install -g vercel
 
+      - name: Debug Secrets
+        run: |
+          echo "VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}"
+          echo "VERCEL_TOKEN (first 5 chars): $(echo $VERCEL_TOKEN | cut -c 1-5)"
+
       - name: Pull Vercel Project Settings
         run: vercel pull --yes --environment=production
 
