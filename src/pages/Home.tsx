@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -5,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Home as HomeIcon, Landmark, Shield, Users } from "lucide-react";
+import { Home as HomeIcon, Landmark, MessageSquare, Phone, Shield, Users } from "lucide-react";
 
 export const Home = () => {
   return (
@@ -54,6 +55,27 @@ export const Home = () => {
             </p>
           </CardContent>
         </Card>
+
+      <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <CardHeader className="text-center">
+          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">Get in Touch</CardTitle>
+          <CardDescription className="text-lg text-gray-600">
+            For the best legal services in Nagpur.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <Button asChild className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+            <a href="https://wa.me/919890624103" target="_blank" rel="noopener noreferrer">
+              <MessageSquare className="mr-2" /> Contact on WhatsApp
+            </a>
+          </Button>
+          <Button asChild className="w-full md:w-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+            <a href="tel:+919890624103">
+              <Phone className="mr-2" /> Call Us (+91 9890624103)
+            </a>
+          </Button>
+        </CardContent>
+      </Card>
 
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader className="text-center">
