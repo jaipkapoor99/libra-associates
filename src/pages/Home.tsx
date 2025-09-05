@@ -5,9 +5,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Home, Landmark, Shield, Users } from "lucide-react";
+import { Home as HomeIcon, Landmark, Shield, Users } from "lucide-react";
 
-export const About = () => {
+export const Home = () => {
   return (
     <main className="space-y-8">
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -74,7 +74,7 @@ export const About = () => {
           </Card>
           <Card className="hover:shadow-md transition-shadow duration-300">
             <CardContent className="flex flex-col items-center text-center p-6">
-              <Home className="text-blue-500 mb-4" size={48} />
+              <HomeIcon className="text-blue-500 mb-4" size={48} />
               <h3 className="text-lg font-semibold">Property Documents</h3>
               <p className="text-gray-600 mt-2">
                 Meticulous handling of all critical property
