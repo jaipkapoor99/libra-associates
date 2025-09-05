@@ -1,15 +1,18 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-
 } from '@/components/ui/navigation-menu';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="flex items-center px-4 py-2 text-white">
+    <div className="flex items-center justify-between px-4 py-2 text-white">
       <div className="flex-1">
         <Link
           to="/"
@@ -18,7 +21,7 @@ export const Navbar = () => {
           <span>Libra Associates</span>
         </Link>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="hidden md:flex flex-1 justify-center">
         <NavigationMenu>
           <NavigationMenuList className="space-x-4">
             <NavigationMenuItem>
@@ -38,7 +41,33 @@ export const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="flex-1" />
+      <div className="flex-1 md:hidden flex justify-end">
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X /> : <Menu />}
+        </button>
+      </div>
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-blue-900 md:hidden z-50 shadow-lg">
+          <NavigationMenu>
+            <NavigationMenuList className="flex flex-col items-center space-y-4 py-4">
+              <NavigationMenuItem>
+                <Link to="/">
+                  <NavigationMenuLink className="hover:text-blue-200" onClick={() => setIsOpen(false)}>
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link to="/contact">
+                  <NavigationMenuLink className="hover:text-blue-200" onClick={() => setIsOpen(false)}>
+                    Contact Us
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      )}
     </div>
   );
 };

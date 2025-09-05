@@ -32,10 +32,17 @@ export const Contact = () => {
                 <Pin className="text-blue-500 mr-4" size={24} />
                 <div>
                   <CardTitle className="text-lg font-semibold">Our Office</CardTitle>
-                  <CardDescription>
-                    S-3, S-7 Hemant Building, Rudrasen Complex, New Mankapur,
-                    Nagpur - 440030
-                  </CardDescription>
+                  <a href="https://maps.app.goo.gl/pnu6Kz1QJjkwhjSd8" target="_blank" rel="noopener noreferrer">
+                    <CardDescription className="hover:text-blue-500 transition-colors duration-300">
+                      S-3, Hemant Building, Rudrasen Complex, New Mankapur,
+                      Nagpur - 440030
+                    </CardDescription>
+                  </a>
+                  <Button asChild size="sm" className="mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                    <a href="https://maps.app.goo.gl/pnu6Kz1QJjkwhjSd8" target="_blank" rel="noopener noreferrer">
+                      Open in Maps
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -44,9 +51,18 @@ export const Contact = () => {
                 <Phone className="text-blue-500 mr-4" size={24} />
                 <div>
                   <CardTitle className="text-lg font-semibold">Phone</CardTitle>
-                  <CardDescription>
-                    +91 9890624103 / +91 9561097103
-                  </CardDescription>
+                  <div className="flex space-x-2 mt-2">
+                    <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                      <a href="tel:+919890624103">
+                        +91 9890624103
+                      </a>
+                    </Button>
+                    <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                      <a href="tel:+919561097103">
+                        +91 9561097103
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -55,10 +71,18 @@ export const Contact = () => {
                 <Mail className="text-blue-500 mr-4" size={24} />
                 <div>
                   <CardTitle className="text-lg font-semibold">Email</CardTitle>
-                  <CardDescription>
-                    neelamalwingeorge@yahoo.co.in /
-                    associateslibra@yahoo.co.in
-                  </CardDescription>
+                  <div className="flex flex-col space-y-2 mt-2">
+                    <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                      <a href="mailto:neelamalwingeorge@yahoo.co.in">
+                        neelamalwingeorge@yahoo.co.in
+                      </a>
+                    </Button>
+                    <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+                      <a href="mailto:associateslibra@yahoo.co.in">
+                        associateslibra@yahoo.co.in
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
