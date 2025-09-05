@@ -15,20 +15,13 @@ export const Home = () => {
           <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">
             Libra Associates
           </CardTitle>
-          <CardDescription className="text-lg text-gray-600 italic">
+          <CardDescription className="text-lg text-gray-600 italic font-bold">
             "Where The Mind Is Without Fear And The Head Is Held High..!"
             <br />- Rabindranath Tagore
           </CardDescription>
         </CardHeader>
-      </Card>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card className="hover:shadow-md transition-shadow duration-300">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold text-blue-600 drop-shadow-sm">Our Identity</CardTitle>
-            <CardDescription className="text-md text-gray-600">Justice, Balance, and Empowerment</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
+        <CardContent className="space-y-4 px-6 pb-6 text-center">
+            <p className="text-md text-gray-600">Justice, Balance, and Empowerment</p>
             <p className="text-gray-700">
               At Libra Associates, our identity is rooted in the principles of
               justice, balance, and fairness—symbolized by our name, Libra, and
@@ -40,9 +33,9 @@ export const Home = () => {
               confidence and dignity to navigate their legal challenges.
             </p>
           </CardContent>
-        </Card>
+      </Card>
 
-        <Card className="hover:shadow-md transition-shadow duration-300">
+      <Card className="hover:shadow-md transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold">Meet Our Principal</CardTitle>
           </CardHeader>
@@ -51,11 +44,16 @@ export const Home = () => {
             <p className="text-gray-700 mt-2">
               Adv. George leads our firm with a wealth of specialized
               knowledge, decades of experience, and a steadfast commitment to
-              ethical, client-focused legal practice.
+              ethical, client-focused legal practice. Her expertise in property
+              law is complemented by a deep understanding of the emotional and
+              financial stakes involved in every transaction.
+            </p>
+            <p className="text-gray-700 mt-2">
+              She is a trusted advisor, a skilled negotiator, and a powerful
+              advocate for her clients' rights.
             </p>
           </CardContent>
         </Card>
-      </div>
 
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader className="text-center">

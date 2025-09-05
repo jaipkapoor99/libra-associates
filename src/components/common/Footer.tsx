@@ -6,10 +6,14 @@ export const Footer = () => {
           Since 19 December, 2005
         </p>
         <p className="mt-2">
-          © {new Date().getFullYear()} Libra Associates. All rights reserved.
+          © {new Date().toLocaleString('default', { month: 'long' })}{' '}
+          {new Date().getFullYear()} Libra Associates. All rights reserved.
         </p>
         <p className="mt-2">
           Professional Legal Services | Property Law Specialists
+        </p>
+        <p className="mt-2">
+          Based in Nagpur, Maharashtra
         </p>
       </div>
     </footer>
