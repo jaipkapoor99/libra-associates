@@ -10,10 +10,10 @@ import { Home as HomeIcon, Landmark, MessageSquare, Phone, Shield, Users } from 
 
 export const Home = () => {
   return (
-    <main className="space-y-8">
+    <main className="space-y-4">
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">
+        <CardHeader className="text-center p-6 pb-2">
+          <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">
             Libra Associates
           </CardTitle>
           <CardDescription className="text-lg text-gray-600 italic font-bold">
@@ -21,14 +21,14 @@ export const Home = () => {
             <br />- Rabindranath Tagore
           </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4 px-6 pb-6 text-center">
+        <CardContent className="space-y-3 px-6 pb-6 pt-2 text-center">
             <p className="text-md text-blue-600 font-bold drop-shadow-sm">Justice, Balance, and Empowerment</p>
-            <p className="text-gray-700">
+            <p className="text-base text-gray-700">
               Our motto, inspired by Rabindranath Tagore, reflects our
               commitment to empowering clients, providing them with the
               confidence and dignity to navigate their legal challenges.
             </p>
-            <p className="text-gray-700">
+            <p className="text-base text-gray-700">
               At Libra Associates, our identity is rooted in the principles of
               justice, balance, and fairness—symbolized by our name, Libra, and
               its representation of the scales.
@@ -37,19 +37,19 @@ export const Home = () => {
       </Card>
 
       <Card className="hover:shadow-md transition-shadow duration-300">
-          <CardHeader>
+          <CardHeader className="p-4">
             <CardTitle className="text-2xl font-semibold">Meet Our Principal</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="px-4 pb-4">
             <h3 className="text-xl font-bold text-blue-600 drop-shadow-sm">Adv. Neelam Alwin George, LL.M</h3>
-            <p className="text-gray-700 mt-2">
+            <p className="text-base text-gray-700 mt-2">
               Adv. George leads our firm with a wealth of specialized
               knowledge, decades of experience, and a steadfast commitment to
               ethical, client-focused legal practice. Her expertise in property
               law is complemented by a deep understanding of the emotional and
               financial stakes involved in every transaction.
             </p>
-            <p className="text-gray-700 mt-2">
+            <p className="text-base text-gray-700 mt-2">
               She is a trusted advisor, a skilled negotiator, and a powerful
               advocate for her clients' rights.
             </p>
@@ -57,13 +57,13 @@ export const Home = () => {
         </Card>
 
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">Get in Touch</CardTitle>
+        <CardHeader className="text-center p-6">
+          <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">Get in Touch</CardTitle>
           <CardDescription className="text-lg text-gray-600">
             For the best legal services in Nagpur.
           </CardDescription>
         </CardHeader>
-        <CardContent className="flex flex-col md:flex-row items-center justify-center gap-4">
+        <CardContent className="flex flex-col md:flex-row items-center justify-center gap-3 px-6 pb-6">
           <Button asChild className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
             <a href="https://wa.me/919890624103" target="_blank" rel="noopener noreferrer">
               <MessageSquare className="mr-2" /> Contact on WhatsApp
@@ -79,7 +79,7 @@ export const Home = () => {
 
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">Our Services</CardTitle>
+          <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">Our Services</CardTitle>
           <CardDescription className="text-lg text-gray-600">Specialized Expertise in Property Law</CardDescription>
         </CardHeader>
         <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
