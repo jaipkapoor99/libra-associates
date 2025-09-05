@@ -12,8 +12,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between px-4 py-1 text-white">
-      <div className="flex-1">
+    <div className="relative flex items-center justify-center px-4 py-1 text-white">
+      <div className="flex-1 text-center">
         <Link
           to="/"
           className="text-2xl font-bold text-white drop-shadow-sm hover:scale-105 transition-transform duration-300"
@@ -21,7 +21,7 @@ export const Navbar = () => {
           <span>Libra Associates</span>
         </Link>
       </div>
-      <div className="hidden md:flex flex-1 justify-center">
+      <div className="hidden md:flex absolute right-4">
         <NavigationMenu>
           <NavigationMenuList className="space-x-4">
             <NavigationMenuItem>
@@ -41,7 +41,7 @@ export const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="flex-1 md:hidden flex justify-end">
+      <div className="absolute right-4 md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
         </button>

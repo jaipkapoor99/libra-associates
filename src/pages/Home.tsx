@@ -13,16 +13,19 @@ export const Home = () => {
   return (
     <main className="space-y-4">
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <CardHeader className="text-center p-6 pb-2">
-          <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">
-            Libra Associates
-          </CardTitle>
-          <CardDescription className="text-lg text-gray-600 italic font-bold">
+        <CardHeader className="text-center p-2">
+          <div className="flex flex-col items-center justify-center">
+            <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">
+              Libra Associates
+            </CardTitle>
+            <p className="text-sm text-gray-500">Est. 19 Dec. 2005</p>
+          </div>
+          <CardDescription className="text-lg text-gray-600 italic font-bold pt-2">
             "Where The Mind Is Without Fear And The Head Is Held High..!"
-            <br />- Rabindranath Tagore
+            <br />- Rabrindranath Tagore
           </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-3 px-6 pb-6 pt-2 text-center">
+        <CardContent className="space-y-3 px-6 pb-4 text-center">
           <p className="text-md text-blue-600 font-bold drop-shadow-sm">
             Justice, Balance, and Empowerment
           </p>
@@ -42,7 +45,7 @@ export const Home = () => {
       <Card className="hover:shadow-md transition-shadow duration-300">
         <CardHeader className="p-4">
           <CardTitle className="text-2xl font-semibold">
-            Meet Our Principal
+            Meet Our Founder and Chief Legal Advisor
           </CardTitle>
         </CardHeader>
         <CardContent className="px-4 pb-4">
