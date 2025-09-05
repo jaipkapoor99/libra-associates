@@ -12,7 +12,7 @@ export const About = () => {
     <main className="space-y-8">
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-gray-800">
+          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">
             Libra Associates
           </CardTitle>
           <CardDescription className="text-lg text-gray-600 italic">
@@ -25,7 +25,7 @@ export const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="hover:shadow-md transition-shadow duration-300">
           <CardHeader>
-            <CardTitle className="text-2xl font-semibold">Our Identity</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-blue-600 drop-shadow-sm">Our Identity</CardTitle>
             <CardDescription className="text-md text-gray-600">Justice, Balance, and Empowerment</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -47,7 +47,7 @@ export const About = () => {
             <CardTitle className="text-2xl font-semibold">Meet Our Principal</CardTitle>
           </CardHeader>
           <CardContent>
-            <h3 className="text-xl font-bold text-gray-800">Adv. Neelam Alwin George, LL.M</h3>
+            <h3 className="text-xl font-bold text-blue-600 drop-shadow-sm">Adv. Neelam Alwin George, LL.M</h3>
             <p className="text-gray-700 mt-2">
               Adv. George leads our firm with a wealth of specialized
               knowledge, decades of experience, and a steadfast commitment to
@@ -59,7 +59,7 @@ export const About = () => {
 
       <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-gray-800">Our Services</CardTitle>
+          <CardTitle className="text-3xl font-bold text-blue-600 drop-shadow-sm">Our Services</CardTitle>
           <CardDescription className="text-lg text-gray-600">Specialized Expertise in Property Law</CardDescription>
         </CardHeader>
         <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -68,7 +68,7 @@ export const About = () => {
               <Landmark className="text-blue-500 mb-4" size={48} />
               <h3 className="text-lg font-semibold">Legal Consultancy for Home Loans</h3>
               <p className="text-gray-600 mt-2">
-                Expert guidance to.
+                Expert guidance.
               </p>
             </CardContent>
           </Card>
