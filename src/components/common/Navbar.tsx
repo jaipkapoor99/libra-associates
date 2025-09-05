@@ -12,7 +12,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between px-4 py-2 text-white">
+    <div className="flex items-center justify-between px-4 py-1 text-white">
       <div className="flex-1">
         <Link
           to="/"
@@ -48,7 +48,7 @@ export const Navbar = () => {
       </div>
       {isOpen && (
         <div
-        className={`absolute top-16 left-0 w-full bg-blue-900 md:hidden z-50 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-12 left-0 w-full bg-blue-900 md:hidden z-50 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
