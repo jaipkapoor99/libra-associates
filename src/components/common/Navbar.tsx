@@ -48,22 +48,28 @@ export const Navbar = () => {
       </div>
       {isOpen && (
         <div
-        className={`absolute top-12 left-0 w-full bg-blue-900 md:hidden z-50 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-        }`}
-      >
-        <NavigationMenu>
-          <NavigationMenuList className="flex flex-col items-start space-y-4 py-4 px-6">
+          className={`absolute top-12 left-0 w-full bg-blue-900 md:hidden z-50 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <NavigationMenu>
+            <NavigationMenuList className="flex flex-col items-start space-y-4 py-4 px-6">
               <NavigationMenuItem>
                 <Link to="/">
-                  <NavigationMenuLink className="hover:text-blue-200" onClick={() => setIsOpen(false)}>
+                  <NavigationMenuLink
+                    className="hover:text-blue-200"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Home
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link to="/contact">
-                  <NavigationMenuLink className="hover:text-blue-200" onClick={() => setIsOpen(false)}>
+                  <NavigationMenuLink
+                    className="hover:text-blue-200"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Contact Us
                   </NavigationMenuLink>
                 </Link>
