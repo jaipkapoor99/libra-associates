@@ -32,13 +32,6 @@ export const Contact = () => {
                       size="sm"
                       className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
                     >
-                      <a href="tel:+919890624103">+91 9890624103</a>
-                    </Button>
-                    <Button
-                      asChild
-                      size="sm"
-                      className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
-                    >
                       <a href="tel:+919561097103">+91 9561097103</a>
                     </Button>
                     <Button
@@ -47,7 +40,7 @@ export const Contact = () => {
                       className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
                     >
                       <a
-                        href="https://wa.me/919890624103"
+                        href="https://wa.me/919561097103"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center"

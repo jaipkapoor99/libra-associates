@@ -81,7 +81,7 @@ export const Home = () => {
             className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
           >
             <a
-              href="https://wa.me/919890624103"
+              href="https://wa.me/919561097103"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -92,8 +92,8 @@ export const Home = () => {
             asChild
             className="w-full md:w-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
           >
-            <a href="tel:+919890624103">
-              <Phone className="mr-2" /> Call Us (+91 9890624103)
+            <a href="tel:+919561097103">
+              <Phone className="mr-2" /> Call Us (+91 9561097103)
             </a>
           </Button>
         </CardContent>
@@ -124,7 +124,7 @@ export const Home = () => {
               <h3 className="text-lg font-semibold">Property Documents</h3>
               <p className="text-gray-600 mt-2">
                 Meticulous handling of all critical property transactions, from
-                Sale Deeds to Wills.
+                Sale Deeds to Wills, R/L, Mutation, and much more.
               </p>
             </CardContent>
           </Card>
