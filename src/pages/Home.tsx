@@ -22,16 +22,16 @@ export const Home = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4 px-6 pb-6 text-center">
-            <p className="text-md text-gray-600">Justice, Balance, and Empowerment</p>
-            <p className="text-gray-700">
-              At Libra Associates, our identity is rooted in the principles of
-              justice, balance, and fairness—symbolized by our name, Libra, and
-              its representation of the scales.
-            </p>
+            <p className="text-md text-blue-600 font-bold drop-shadow-sm">Justice, Balance, and Empowerment</p>
             <p className="text-gray-700">
               Our motto, inspired by Rabindranath Tagore, reflects our
               commitment to empowering clients, providing them with the
               confidence and dignity to navigate their legal challenges.
+            </p>
+            <p className="text-gray-700">
+              At Libra Associates, our identity is rooted in the principles of
+              justice, balance, and fairness—symbolized by our name, Libra, and
+              its representation of the scales.
             </p>
           </CardContent>
       </Card>
