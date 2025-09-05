@@ -6,7 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Mail, Phone, Pin } from 'lucide-react';
+import { GoogleMapsIcon } from '@/components/common/GoogleMapsIcon';
+import { Mail, Phone } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/common/WhatsAppIcon';
 
 export const Contact = () => {
@@ -89,7 +90,13 @@ export const Contact = () => {
             <Card className="hover:shadow-md transition-shadow duration-300">
               <CardContent className="p-4">
                 <div className="flex items-center">
-                  <Pin className="text-blue-500 mr-4" size={24} />
+                  <a
+                    href="https://maps.app.goo.gl/pnu6Kz1QJjkwhjSd8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GoogleMapsIcon className="mr-4 h-6 w-6" />
+                  </a>
                   <div>
                     <CardTitle className="text-lg font-semibold">
                       Our Office

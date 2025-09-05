@@ -18,7 +18,7 @@ export const Home = () => {
             <CardTitle className="text-2xl font-bold text-blue-600 drop-shadow-sm">
               Libra Associates
             </CardTitle>
-            <p className="text-sm text-gray-500">Est. 19 Dec. 2005</p>
+            <p className="text-sm text-gray-500 font-bold">Est. 19 Dec. 2005</p>
           </div>
           <CardDescription className="text-lg text-gray-600 italic font-bold pt-2">
             "Where The Mind Is Without Fear And The Head Is Held High..!"

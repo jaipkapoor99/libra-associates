@@ -16,8 +16,13 @@ export const Navbar = () => {
       <div className="flex-1 text-center">
         <Link
           to="/"
-          className="text-2xl font-bold text-white drop-shadow-sm hover:scale-105 transition-transform duration-300"
+          className="flex items-center justify-center text-2xl font-bold text-white drop-shadow-sm hover:scale-105 transition-transform duration-300"
         >
+          <img
+            src="/src/assets/libra-logo.svg"
+            alt="Libra Associates Logo"
+            className="h-8 w-8 mr-2 filter invert"
+          />
           <span>Libra Associates</span>
         </Link>
       </div>
